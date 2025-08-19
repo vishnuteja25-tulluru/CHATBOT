@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/ML Chatbot</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <div id="chatbot-container" class="w-full max-w-2xl h-full md:h-[90vh] md:max-h-[700px] flex flex-col bg-white shadow-2xl rounded-2xl overflow-hidden">
+        <header class="bg-slate-800 text-white p-4 shadow-md z-10">
+            <h1 class="text-2xl font-bold text-center">ALGORITHM RELATED TO AI AND ML - CHATBOT</h1>
+        </header>
+        <main id="chat-log" class="flex-1 p-6 overflow-y-auto bg-gray-50">
+
+            <div class="flex justify-start mb-4">
+                <div class="bg-indigo-500 text-white rounded-lg p-3 max-w-xs shadow">
+                    <p>Hello! I'm an AI assistant powered by Gemini. How can I help you today?</p>
+                </div>
+            </div>
+        </main>
+        <footer class="p-4 bg-white border-t border-gray-200">
+            <form id="chat-form" class="flex items-center space-x-4">
+                <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" class="flex-1 p-3 border-2 border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-400 transition">
+                <button type="submit" id="send-button" class="bg-indigo-600 text-white p-3 rounded-full hover:bg-indigo-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-indigo-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
